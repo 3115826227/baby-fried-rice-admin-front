@@ -3,6 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import axios from 'axios'
+axios.defaults.headers.post['Content-type'] = 'application/json'
+Vue.prototype.$axios = axios.create({
+  baseURL: 'http://localhost:8090/api',
+  timeout: 5000
+})
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
