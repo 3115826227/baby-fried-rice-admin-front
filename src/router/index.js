@@ -32,9 +32,9 @@ const constantRouter = [
         component: () => import('../components/Main/student.vue')
       },
       {
-        path: '/policy',
+        path: '/permission',
         name: '权限管理',
-        component: () => import('../components/Main/policy.vue')
+        component: () => import('../components/Main/permission.vue')
       },
       {
         path: '/notice',

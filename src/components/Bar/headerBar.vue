@@ -28,10 +28,10 @@ export default {
 </script>
 
 <style scoped>
-.el-menu-vertical-demo:not(.el-menu--collapse) {
+/* .el-menu-vertical-demo:not(.el-menu--collapse) {
     width: 200px;
     min-height: 400px;
-}
+} */
 #headerBar {
     background-color: #545c64;
 }

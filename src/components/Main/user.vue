@@ -1,6 +1,5 @@
 <template>
-    <div id='user'>
-        用户管理
+    <div id="user">
     </div>
 </template>
 

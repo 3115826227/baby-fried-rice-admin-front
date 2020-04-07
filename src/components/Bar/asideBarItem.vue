@@ -21,4 +21,10 @@ export default {
 }
 </script>
 <style scoped>
+.el-submenu{
+  background-color: #1a1b20 !important;
+}
+.el-menu-item{
+  background-color: #1a1b20 !important;
+}
 </style>

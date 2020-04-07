@@ -4,7 +4,7 @@
               <el-col :span="24">
                   <el-menu router :default-active="$route.path"  class="el-menu-vertical-demo"
                   @open="handleOpen" @close="handleClose"
-                  background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                  text-color="#fff" background-color="#1a1b20 !important" active-text-color="#1c84c6">
                   <asideBarItem v-for="router in routers" :router="router" :key="router.path">
                   </asideBarItem>
                   </el-menu>
@@ -43,7 +43,11 @@ export default {
 </script>
 
 <style scoped>
-.aside-container {
-    height: inherit;
+.asideBar {
+    height: 100%;
+}
+.el-menu-vertical-demo {
+    flex: 1;
+    height: 745px;
 }
 </style>

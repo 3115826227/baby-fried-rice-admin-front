@@ -1,11 +1,11 @@
 <template>
-    <div id='class'>
+    <div id='subject'>
         课程管理
     </div>
 </template>
 
 <script>
 export default {
-  name: 'class'
+  name: 'subject'
 }
 </script>

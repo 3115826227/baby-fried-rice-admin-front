@@ -1,9 +1,15 @@
 <template>
     <el-container class="index-container">
         <el-header id='header'>
-            宝宝煎米果 · 校园管理系统
+            <el-menu class="el-menu-demo" mode="horizontal" background-color="#1a1b20 !important" text-color="#fff">
+              <el-menu-item style="font-size:20px;"><router-link to='/index' class="a">宝宝煎米果 · 校园管理系统</router-link></el-menu-item>
+              <el-submenu style="float:right;">
+                  <template slot="title">{{login_name}}@baby.com</template>
+                  <el-menu-item index="2-1" @click="logout">退出</el-menu-item>
+              </el-submenu>
+            </el-menu>
         </el-header>
-        <el-container>
+        <el-container id="content">
             <el-aside width="200px">
                <asideBar></asideBar>
             </el-aside>
@@ -33,7 +39,8 @@ export default {
   },
   data () {
     return {
-      levelList: null
+      levelList: null,
+      login_name: '邵阳学院'
     }
   },
   watch: {
@@ -45,6 +52,9 @@ export default {
     getBreadcrumb () {
       let matched = this.$route.matched.filter(item => item.name)
       this.levelList = matched
+    },
+    logout () {
+      console.log('退出')
     }
   },
   created () {
@@ -54,32 +64,47 @@ export default {
 </script>
 
 <style scoped>
+body {
+    height: 100%;
+}
 #header {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 0;
     background-color: #545c64;
     color: white;
-    font-size: 20px;
-    text-align: left;
-    padding: 15px 0 0 30px;
+}
+#content {
+    flex: 1;
 }
 .el-aside {
-    background-color: #D3DCE6;
-    color: #333;
-    text-align: center;
-    line-height: 200px;
+    background-color: #1a1b20 !important;
+    /* color: #1a1b20 !important; */
 }
 .el-main {
     background-color: #E9EEF3;
-    color: #333;
+    color: #1a1b20 !important;
     text-align: center;
-    line-height: 160px;
+}
+.el-menu.el-menu–inline {
+    overflow: auto;
 }
 body > .el-container {
     margin-bottom: 40px;
 }
 .index-container {
     height: 100%;
+}
+.a {
+  text-decoration: none;
+}
+.el-menu {
+  background-color: #1a1b20 !important;
+}
+.el-submenu{
+  background-color: #1a1b20 !important;
+}
+.el-menu-item{
+  background-color: #1a1b20 !important;
 }
 
 </style>
