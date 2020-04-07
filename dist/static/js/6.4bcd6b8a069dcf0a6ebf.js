@@ -1,0 +1,2 @@
+webpackJsonp([6],{nFIe:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{attrs:{id:"subject"}},[this._v("\n    课程管理\n")])},staticRenderFns:[]},r=n("VU/8")({name:"subject"},s,!1,null,null,null);t.default=r.exports}});
+//# sourceMappingURL=6.4bcd6b8a069dcf0a6ebf.js.map

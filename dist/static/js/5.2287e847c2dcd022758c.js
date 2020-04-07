@@ -1,0 +1,2 @@
+webpackJsonp([5],{WpIc:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{attrs:{id:"system"}},[this._v("\n    系统管理\n")])},staticRenderFns:[]},r=n("VU/8")({name:"system"},s,!1,null,null,null);t.default=r.exports}});
+//# sourceMappingURL=5.2287e847c2dcd022758c.js.map
